@@ -1,0 +1,306 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'League Spartan', sans-serif;
+    color: #fff;
+    background: linear-gradient(135deg, #6a0dad, #8a2be2);
+    background-attachment: fixed; /* Para que el fondo no se mueva al hacer scroll */
+}
+
+h1, h2, p {
+    text-align: center;
+}
+
+section {
+    padding: 60px 20px;
+}
+
+/* Header Styles */
+#header {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    overflow: hidden;
+}
+
+#headerVideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* Menu Styles */
+.menu {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    padding: 0;
+}
+
+.menu ul li {
+    margin: 0;
+}
+
+.menu ul li a {
+    color: #fff;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu ul li a:hover {
+    color: #ff5722;
+}
+
+/* Header Content */
+.header-content {
+    z-index: 2;
+    margin-top: 40px;
+    max-width: 800px;
+    padding: 0 20px;
+}
+
+h1 {
+    font-size: 3.2rem;
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+
+p {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+/* Call to Action Button - Neon Style */
+.cta-button {
+    font-size: 1.2rem;
+    padding: 15px 30px;
+    background-color: #6a0dad; /* Color morado principal */
+    color: #fff;
+    border: 2px solid #8a2be2; /* Borde morado claro */
+    border-radius: 30px;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 0 0 20px rgba(138, 43, 226, 0.7), 0 0 40px rgba(138, 43, 226, 0.5); /* Efecto neón */
+    transition: all 0.3s ease-in-out;
+    font-family: 'League Spartan', sans-serif;
+}
+
+.cta-button:hover {
+    background-color: #8a2be2;
+    box-shadow: 0 0 40px rgba(106, 13, 173, 0.9), 0 0 80px rgba(106, 13, 173, 0.7); /* Brillo más intenso */
+    transform: scale(1.1);
+}
+
+/* Historia Section */
+#historia .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#historia h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #ffffff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+#historia .card {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+.historia-imagen {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.historia-imagen img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-height: 100%;
+}
+
+.historia-texto {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.historia-texto h3 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.historia-texto p {
+    font-size: 1.2rem;
+    color: #ddd;
+    line-height: 1.5;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+/* Altar Section */
+#altar .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+#altar h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #ffffff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* Cards Container for Altar */
+.altar-cards-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Altar Cards Estilos Comunes */
+.altar-card {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo transparente opaco */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Sombra de la card */
+    overflow: hidden;
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.altar-card:hover {
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño al pasar el cursor */
+}
+
+.altar-card-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-height: 300px; /* Tamaño base de la imagen */
+}
+
+.altar-card-text {
+    padding: 20px;
+}
+
+.altar-card-text h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.altar-card-text p {
+    font-size: 1.1rem;
+    color: #ddd;
+    line-height: 1.5;
+}
+
+/* Nueva Card "cadaltar" más ancha y más grande */
+/* Nueva Card "cadaltar" más ancha y con imagen ajustada */
+.cadaltar {
+    max-width: 1000px; /* Mantiene la card más ancha */
+    margin-bottom: 40px; /* Más separación */
+}
+
+.cadaltar .altar-card-image img {
+    max-height: 350px; /* Imagen más pequeña */
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho */
+    object-fit: contain; /* Mantiene proporciones y evita que la imagen se corte */
+}
+
+.cadaltar .altar-card-text h3 {
+    font-size: 2.2rem; /* Texto más grande */
+    margin-bottom: 10px;
+}
+
+.cadaltar .altar-card-text p {
+    font-size: 1.2rem; /* Mantiene el tamaño de fuente */
+    line-height: 1.3; /* Reduce el espacio entre líneas para hacer el texto más compacto */
+    margin-bottom: 20px; /* Reduce el margen inferior */
+    padding: 10px 50px; /* Reduce el padding alrededor del texto */
+}
+
+
+/* Estilos específicos para cada nivel */
+
+/* Card Nivel 1 */
+/* Card Nivel 1 */
+.card-nivel1 .altar-card-image img {
+    max-height: 250px;
+    width: 50%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+    object-fit: contain; /* Mantiene la proporción de la imagen y evita que se corte */
+}
+
+/* Card Nivel 2 */
+.card-nivel2 .altar-card-image img {
+    max-height: 280px;
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+    object-fit: contain; /* Mantiene la proporción de la imagen y evita que se corte */
+}
+
+/* Card Nivel 3 */
+.card-nivel3 .altar-card-image img {
+    max-height: 250px;
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+    object-fit: contain; /* Mantiene la proporción de la imagen y evita que se corte */
+}
+
+
+/* Responsividad para dispositivos móviles */
+@media (max-width: 768px) {
+    .altar-cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .altar-card {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .cadaltar {
+        max-width: 100%;
+    }
+}
