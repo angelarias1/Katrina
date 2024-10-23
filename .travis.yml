@@ -1,0 +1,20 @@
+language: node_js
+node_js:
+  - "stable"
+
+# Instalar un servidor para verificar el HTML
+before_install:
+  - npm install -g htmlhint
+
+# Verificar la sintaxis del HTML
+script:
+  - htmlhint *.html
+
+# Desplegar a GitHub Pages
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN  # Definido en las variables de entorno de Travis
+  local_dir: .
+  on:
+    branch: main
