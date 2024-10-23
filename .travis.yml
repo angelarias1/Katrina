@@ -17,4 +17,4 @@ deploy:
   github_token: $GITHUB_TOKEN  # Definido en las variables de entorno de Travis
   local_dir: .
   on:
-    branch: main
+    branch: master
